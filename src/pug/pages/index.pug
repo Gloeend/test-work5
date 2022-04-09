@@ -3,5 +3,103 @@ extends ../layout/_layout
 block vars
 	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'Index'}
 block content_block
-	section.section.demo_mod
-		h1.section_title Hola #[a.test(href='https://glivera-team.com/') Maketodor] :)
+	.promoted.wrap
+		a(href="#").promoted__link
+			.promoted__container
+				.promoted__left
+					h3.promoted__title  Меры поддержки в условиях санкций
+					.promoted__date 1 апреля 2022 года
+				.promoted__right
+					.promoted__preview(style="background-image: url('../../images/promoted.jpg')")
+	.main
+		.wrap
+			.masonry
+				a(href="#").masonry__item.masonry__item--large
+					h3.masonry__title Совещание с постоянными членами Совета Безопасности
+					.masonry__date 5 апреля 2022 года, 17:35
+					.masonry__preview(style="background-image:url('../../images/masonry.jpg')")
+				.masonry__row
+					a(href="#").masonry__item
+						h3.masonry__title Прощание с Владимиром Жириновским
+						.masonry__date 5 апреля 2022 года, 17:35
+						.masonry__preview(style="background-image:url('../../images/masonry.jpg')")
+					a(href="#").masonry__item
+						h3.masonry__title Совещание по развитию агропромышленного и рыбохозяйственного комплексов
+						.masonry__date 5 апреля 2022 года, 17:35
+						.masonry__preview(style="background-image:url('../../images/masonry.jpg')")
+		.section.section--previous.wrap
+			a(href="#").section__header
+				.section__title Президент России
+			.news
+				.news__row
+					a(href="#").news__item
+						.news__title Телефонный разговор с Президентом Азербайджана Ильхамом Алиевым
+						.news__date 9 апреля 2022 года, 15:30
+					a(href="#").news__item
+						.news__title Телефонный разговор с Президентом Туркменистана Сердаром Бердымухамедовым
+						.news__date 9 апреля 2022 года, 15:30
+				.news__row
+					a(href="#").news__item
+						.news__title Открыта аккредитация журналистов на освещение мероприятий, посвящённых 77-й годовщине Победы в Великой Отечественной войне 1941–1945 годов
+						.news__date 9 апреля 2022 года, 15:30
+					a(href="#").news__item
+						.news__title Телефонный разговор с Премьер-министром Венгрии Виктором Орбаном
+						.news__date 9 апреля 2022 года, 15:30
+				.news__row
+					a(href="#").news__item
+						.news__title Телефонный разговор с Премьер-министром Венгрии Виктором Орбаном
+						.news__date 9 апреля 2022 года, 15:30
+					a(href="#").news__item
+						.news__title Телефонный разговор с Премьер-министром Венгрии Виктором Орбаном
+						.news__date 9 апреля 2022 года, 15:30
+		hr.hr
+		.section.section--previous.wrap
+			.section__header.section__header--open
+				.section__title Комиссии и советы при Президенте России
+			.news
+				.news__row
+					a(href="#").news__item
+						.news__title Телефонный разговор с Президентом Азербайджана Ильхамом Алиевым
+						.news__date 9 апреля 2022 года, 15:30
+					a(href="#").news__item
+						.news__title Телефонный разговор с Президентом Туркменистана Сердаром Бердымухамедовым
+						.news__date 9 апреля 2022 года, 15:30
+				.news__row
+					a(href="#").news__item
+						.news__title Открыта аккредитация журналистов на освещение мероприятий, посвящённых 77-й годовщине Победы в Великой Отечественной войне 1941–1945 годов
+						.news__date 9 апреля 2022 года, 15:30
+					a(href="#").news__item
+						.news__title Телефонный разговор с Премьер-министром Венгрии Виктором Орбаном
+						.news__date 9 апреля 2022 года, 15:30
+				.news__row
+					a(href="#").news__item
+						.news__title Телефонный разговор с Премьер-министром Венгрии Виктором Орбаном
+						.news__date 9 апреля 2022 года, 15:30
+					a(href="#").news__item
+						.news__title Телефонный разговор с Премьер-министром Венгрии Виктором Орбаном
+						.news__date 9 апреля 2022 года, 15:30
+		.section.section--sites
+			.wrap
+				.sites
+					.sites__row
+						a(href="#").sites__item.sites__item--red
+							.sites__title Меры Правительства по повышению устойчивости экономики и поддержке граждан в условиях санкций
+							.sites__ui
+								.sites__description constitution.kremlin.ru
+								.sites__button
+						a(href="#").sites__item.sites__item--red
+							.sites__title Конституция Российской Федерации
+							.sites__ui
+								.sites__description constitution.kremlin.ru
+								.sites__button
+					.sites__row
+						a(href="#").sites__item
+							.sites__title Конституция Российской Федерации
+							.sites__ui
+								.sites__description constitution.kremlin.ru
+								.sites__button
+						a(href="#").sites__item
+							.sites__title Конституция Российской Федерации
+							.sites__ui
+								.sites__description constitution.kremlin.ru
+								.sites__button

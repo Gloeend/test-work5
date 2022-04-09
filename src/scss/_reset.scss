@@ -24,6 +24,10 @@ time, mark, audio, video, button {
 	}
 }
 
+a {
+	text-decoration: none;
+}
+
 sub,
 sup {
 	margin: 0;
@@ -143,5 +147,14 @@ table {
 * {
 	box-sizing: border-box;
 	word-wrap: break-word;
+}
+.main {
+	padding-top: 30px;
+	width: 100%;
+	background-color: #f8f8f8;
+}
+
+.wrapper {
+	margin-top: 60px;
 }
 //-------------------------------------------------reset*/
