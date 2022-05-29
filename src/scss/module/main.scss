@@ -1,0 +1,106 @@
+.main {
+    width: 100%;
+    padding-top: 22px;
+    padding-left: 60px;
+    padding-right: 16px;
+    background: #f8faff;
+
+    &__header {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    &__add {
+        margin-bottom: 20px;
+        padding: 12px 20px 12px 16px;
+        background: #55c97b;
+        width: fit-content;
+        border-radius: 3px;
+        color: #fff;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        &::before {
+            display: block;
+            content: '';
+            width: 11px;
+            height: 11px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url("../images/main/plus.png");
+        }
+    }
+    &__form {
+        margin-top: 10px;
+    }
+    &__button__header {
+        width: 100%;
+    }
+
+    &__form {
+        display: inline-flex;
+        flex-wrap: wrap;
+        column-gap: 0px;
+    }
+    &__sidebar {
+        -webkit-box-shadow: 0px 0px 11px 0px rgba(37, 37, 37, 0.1);
+        -moz-box-shadow: 0px 0px 11px 0px rgba(37, 37, 37, 0.1);
+        box-shadow: 0px 0px 11px 0px rgba(37, 37, 37, 0.1);
+        height: fit-content;
+        align-self: center;
+        z-index: 5;
+        background-color: #fff;
+        width: fit-content;
+        padding-top: 30px;
+        padding-bottom: 34px;
+        display: flex;
+        flex-flow: column;
+        padding-right: 33px;
+        border-radius: 0 5px 5px 0;
+        &__title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #343434;
+            margin-bottom: 31px;
+            padding-left: 43px;
+        }
+        &__row {
+            padding-left: 43px;
+            display: inline-flex;
+            gap: 10px;
+            &:last-child {
+                padding-top: 20px;
+                border-top: 1px solid #b1b1b1;
+            } 
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+        &__button {
+            padding: 11px 22px 11px 14px;
+            background-color: #b1b1b1;
+            border-radius: 3px;
+            color: #fff;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            &::before {
+                display: block;
+                content: "";
+                width: 17px;
+                height: 17px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-image: url("../images/main/edit.png");
+            }
+
+            &--edit {
+                background-color: #55c97b;
+            }
+        }
+    }
+}

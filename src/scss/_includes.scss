@@ -14,12 +14,9 @@
 @import "base_ui/all_icons";
 @import "base_ui/buttons";
 
-// plugins
-
-@import "module/nav";
-@import "module/promoted";
-@import "module/masonry";
-@import "module/section";
-@import "module/news";
-@import "module/sites";
-
+// modules
+@import "module/menu.scss";
+@import "module/main.scss";
+@import "module/profile.scss";
+@import "module/crumbs.scss";
+@import "module/form.scss";

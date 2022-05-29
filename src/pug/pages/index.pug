@@ -3,103 +3,67 @@ extends ../layout/_layout
 block vars
 	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'Index'}
 block content_block
-	.promoted.wrap
-		a(href="#").promoted__link
-			.promoted__container
-				.promoted__left
-					h3.promoted__title  Меры поддержки в условиях санкций
-					.promoted__date 1 апреля 2022 года
-				.promoted__right
-					.promoted__preview(style="background-image: url('../../images/promoted.jpg')")
+	.menu 
+		.menu__column 
+			a(href="/" style="background-image: url('images/logotype.png')").menu__item.menu__item--logotype
+			a(href="#").menu__item.menu__item--home Главная
+			a(href="#").menu__item.menu__item--cart.menu__item--active Мои магазины
+			a(href="#").menu__item.menu__item--promo Промоматериалы
+			a(href="#").menu__item.menu__item--statistic Статистика
+			a(href="#").menu__item.menu__item--balance Баланс
+			a(href="#").menu__item.menu__item--personal Персональные данные
+			a(href="#").menu__item.menu__item--faq FAQ
+			a(href="#").menu__item.menu__item--helper Техподдержка
+			a(href="#").menu__item.menu__item--logout Выход
 	.main
-		.wrap
-			.masonry
-				a(href="#").masonry__item.masonry__item--large
-					h3.masonry__title Совещание с постоянными членами Совета Безопасности
-					.masonry__date 5 апреля 2022 года, 17:35
-					.masonry__preview(style="background-image:url('../../images/masonry.jpg')")
-				.masonry__row
-					a(href="#").masonry__item
-						h3.masonry__title Прощание с Владимиром Жириновским
-						.masonry__date 5 апреля 2022 года, 17:35
-						.masonry__preview(style="background-image:url('../../images/masonry.jpg')")
-					a(href="#").masonry__item
-						h3.masonry__title Совещание по развитию агропромышленного и рыбохозяйственного комплексов
-						.masonry__date 5 апреля 2022 года, 17:35
-						.masonry__preview(style="background-image:url('../../images/masonry.jpg')")
-		.section.section--previous.wrap
-			a(href="#").section__header
-				.section__title Президент России
-			.news
-				.news__row
-					a(href="#").news__item
-						.news__title Телефонный разговор с Президентом Азербайджана Ильхамом Алиевым
-						.news__date 9 апреля 2022 года, 15:30
-					a(href="#").news__item
-						.news__title Телефонный разговор с Президентом Туркменистана Сердаром Бердымухамедовым
-						.news__date 9 апреля 2022 года, 15:30
-				.news__row
-					a(href="#").news__item
-						.news__title Открыта аккредитация журналистов на освещение мероприятий, посвящённых 77-й годовщине Победы в Великой Отечественной войне 1941–1945 годов
-						.news__date 9 апреля 2022 года, 15:30
-					a(href="#").news__item
-						.news__title Телефонный разговор с Премьер-министром Венгрии Виктором Орбаном
-						.news__date 9 апреля 2022 года, 15:30
-				.news__row
-					a(href="#").news__item
-						.news__title Телефонный разговор с Премьер-министром Венгрии Виктором Орбаном
-						.news__date 9 апреля 2022 года, 15:30
-					a(href="#").news__item
-						.news__title Телефонный разговор с Премьер-министром Венгрии Виктором Орбаном
-						.news__date 9 апреля 2022 года, 15:30
-		hr.hr
-		.section.section--previous.wrap
-			.section__header.section__header--open
-				.section__title Комиссии и советы при Президенте России
-			.news
-				.news__row
-					a(href="#").news__item
-						.news__title Телефонный разговор с Президентом Азербайджана Ильхамом Алиевым
-						.news__date 9 апреля 2022 года, 15:30
-					a(href="#").news__item
-						.news__title Телефонный разговор с Президентом Туркменистана Сердаром Бердымухамедовым
-						.news__date 9 апреля 2022 года, 15:30
-				.news__row
-					a(href="#").news__item
-						.news__title Открыта аккредитация журналистов на освещение мероприятий, посвящённых 77-й годовщине Победы в Великой Отечественной войне 1941–1945 годов
-						.news__date 9 апреля 2022 года, 15:30
-					a(href="#").news__item
-						.news__title Телефонный разговор с Премьер-министром Венгрии Виктором Орбаном
-						.news__date 9 апреля 2022 года, 15:30
-				.news__row
-					a(href="#").news__item
-						.news__title Телефонный разговор с Премьер-министром Венгрии Виктором Орбаном
-						.news__date 9 апреля 2022 года, 15:30
-					a(href="#").news__item
-						.news__title Телефонный разговор с Премьер-министром Венгрии Виктором Орбаном
-						.news__date 9 апреля 2022 года, 15:30
-		.section.section--sites
-			.wrap
-				.sites
-					.sites__row
-						a(href="#").sites__item.sites__item--red
-							.sites__title Меры Правительства по повышению устойчивости экономики и поддержке граждан в условиях санкций
-							.sites__ui
-								.sites__description constitution.kremlin.ru
-								.sites__button
-						a(href="#").sites__item.sites__item--red
-							.sites__title Конституция Российской Федерации
-							.sites__ui
-								.sites__description constitution.kremlin.ru
-								.sites__button
-					.sites__row
-						a(href="#").sites__item
-							.sites__title Конституция Российской Федерации
-							.sites__ui
-								.sites__description constitution.kremlin.ru
-								.sites__button
-						a(href="#").sites__item
-							.sites__title Конституция Российской Федерации
-							.sites__ui
-								.sites__description constitution.kremlin.ru
-								.sites__button
+		.main__header
+			.crumbs
+				.crumbs__item Главная
+				.crumbs__item Мои магазины
+			.profile
+				.profile__messages
+					.profile__messages__icon
+				.profile__open
+					.profile__avatar
+					.profile__name Максим Добжанский
+		.main__form
+			.main__button__header
+				.main__add Создать свой магазин 
+			.form
+				.form__content
+					.form__header
+						.form__title Создать магазин
+						.form__close
+					.form__items 
+						.form__row
+							.form__item
+								.form__label Шаблон
+								select.form__select
+									option(value="Стандартный").form__option Стандартный
+									option(value="Крутой").form__option Крутой
+									option(value="Очень крутой").form__option Очень крутой
+							.form__item
+								.form__label Цветовая схема
+								select.form__select
+									option(value="Классическая").form__option Классическая
+									option(value="Необычная").form__option Необычная
+									option(value="Странная").form__option Странная
+						.form__item.form__item--large
+							.form__label Домен
+							.form__item__wrapper 
+								input(type="text" placeholder="Например: ivangrozniy").form__input
+								.form__domen .work5.ru
+					.form__warning
+						.form__warning__preview
+						.form__warning__description В названии домена разрешены латиница и “-”, запрещается использовать словосочетание Work 5. После создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по #[a(href="#").form__link ссылке]
+					.form__buttons 
+						.form__button Отмена
+						.form__button.form__button--create Создать
+			.main__sidebar
+				.main__sidebar__title Действие
+				.main__sidebar__row
+					.main__sidebar__button.main__sidebar__button--edit Редактировать
+					.main__sidebar__button Редактировать
+				.main__sidebar__row
+					.main__sidebar__button.main__sidebar__button--edit Редактировать
+					.main__sidebar__button Редактировать

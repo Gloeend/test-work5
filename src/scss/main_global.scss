@@ -13,22 +13,11 @@ $ie7:false;
 $doc:false;
 $local_var:global;
 $holydat_var:none;
-.wrap {
-	width: calc(100% - 320px);
-	padding: 0 160px;
-	min-width: 680px;
 
-	&--header {
-		padding: 0 160px 0 116px;
-	}
-}
-.hr {
-	border-top: 1px solid #e2e3e4;
-	margin-top: 25px;
-	margin-bottom: 50px;
+.base {
+	display: inline-flex;
 	width: 100%;
-	max-width: 840px;
-	margin-left: 0;
+	min-height: 100vh;
 }
 
 @import "includes";
